@@ -40,7 +40,7 @@ along with this software (see the LICENSE.md file). If not, see
     <widgets><container style="container basic_html">
         <container-row><row-col sm="5">
             <!-- if not at least one path segment for the space show list of spaces -->
-            <label text="Wiki Spaces" type="h5"/>
+            <label text="维基空间" type="h5"/>
             <section-iterate name="WikiSpaceList" list="wikiSpaceList" entry="wikiSpace" condition="wikiSpaceList"><widgets>
                 <container><link text="${wikiSpace.description}" url="${basePath}/${wikiSpace.wikiSpaceId}" link-type="anchor"
                         icon="glyphicon glyphicon-${wikiSpaceId == wikiSpace.wikiSpaceId ? 'chevron-right' : 'minus'}"
@@ -48,7 +48,7 @@ along with this software (see the LICENSE.md file). If not, see
             </widgets></section-iterate>
 
         </row-col><row-col sm="7">
-            <label text="Select a Wiki Space" type="h4" style="text-center" condition="wikiSpace == null"/>
+            <label text="选择一个维基空间" type="h4" style="text-center" condition="wikiSpace == null"/>
 
             <section name="MainViewSection" condition="wikiSpace != null"><actions>
                 <service-call name="org.moqui.impl.WikiServices.get#WikiSpacePages" out-map="context"

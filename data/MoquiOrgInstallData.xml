@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entity-facade-xml type="install">
     <!-- WikiSpace: framework -->
-    <moqui.resource.wiki.WikiSpace wikiSpaceId="framework" description="Moqui Framework" restrictView="N"
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="framework" description="莫基框架" restrictView="N"
             rootPageLocation="dbresource://WikiSpace/framework.md"
             publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
     <moqui.resource.wiki.WikiPage wikiPageId="framework" wikiSpaceId="framework" pagePath="" createdByUserId="" publishedVersionName="01"/>
@@ -12,7 +12,7 @@
     <moqui.resource.DbResource resourceId="framework_dir" parentResourceId="WIKI_SPACE_ROOT" filename="framework" isFile="N"/>
 
     <!-- WikiSpace: mantle -->
-    <moqui.resource.wiki.WikiSpace wikiSpaceId="mantle" description="Mantle Business Artifacts" restrictView="N"
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="mantle" description="地幔业务工件" restrictView="N"
             rootPageLocation="dbresource://WikiSpace/mantle.md"
             publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
     <moqui.resource.wiki.WikiPage wikiPageId="mantle" wikiSpaceId="mantle" pagePath="" createdByUserId="" publishedVersionName="01"/>
@@ -22,7 +22,7 @@
             fileData="# Mantle Business Artifacts"><histories versionName="01" versionDate="1485028800000" isDiff="N"/></moqui.resource.DbResourceFile>
 
     <!-- WikiSpace: apps -->
-    <moqui.resource.wiki.WikiSpace wikiSpaceId="apps" description="Moqui Applications" restrictView="N"
+    <moqui.resource.wiki.WikiSpace wikiSpaceId="apps" description="莫基应用程序" restrictView="N"
             rootPageLocation="dbresource://WikiSpace/apps.md"
             publicPageUrl="/docs/${wikiSpaceId}/${pagePath}?ver=${versionName}" publicAttachmentUrl="/docs/attachment/${wikiPageId}/${filename}"/>
     <moqui.resource.wiki.WikiPage wikiPageId="apps" wikiSpaceId="apps" pagePath="" createdByUserId="" publishedVersionName="01"/>

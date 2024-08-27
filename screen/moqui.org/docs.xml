@@ -48,7 +48,7 @@ along with this software (see the LICENSE.md file). If not, see
     <widgets><container style="container basic_html">
         <container-row><row-col md="3">
             <!-- if not at least one path segment for the space show list of spaces -->
-            <label text="Wiki Spaces" type="h5"/>
+            <label text="维基空间" type="h5"/>
             <section-iterate name="WikiSpaceList" list="wikiSpaceList" entry="wikiSpace" condition="wikiSpaceList"><widgets>
                 <container><link text="${wikiSpace.description}" url="${basePath}/${wikiSpace.wikiSpaceId}" link-type="anchor"
                         icon="glyphicon glyphicon-${wikiSpaceId == wikiSpace.wikiSpaceId ? 'chevron-right' : 'minus'}"
@@ -111,8 +111,8 @@ along with this software (see the LICENSE.md file). If not, see
                     </container>
                 </widgets>
                 <fail-widgets>
-                    <label text="Sorry, we couldn't find that page!" type="h2" style="text-center" condition="wikiSpace != null"/>
-                    <label text="Select a Wiki Space" type="h4" style="text-center" condition="wikiSpace == null"/>
+                    <label text="对不起, 我们没有找到该页面！" type="h2" style="text-center" condition="wikiSpace != null"/>
+                    <label text="选择一个维基空间" type="h4" style="text-center" condition="wikiSpace == null"/>
                 </fail-widgets>
             </section>
         </row-col></container-row>

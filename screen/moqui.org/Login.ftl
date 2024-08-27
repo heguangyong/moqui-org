@@ -18,59 +18,59 @@
 </script>
 
 <div class="text-center">
-    <h4>Login to access <span class="text-info">HiveMind PM</span> for Moqui</h4>
-    <p>An account is required to view issues (requests), projects, and tasks. Create a <a class="text-success" href="#new-account" data-toggle="tab">New Account</a> to get access immediately.</p>
-    <p>Your account will initially have full access to the My Account app for requests, messages, etc and view-only access for the HiveMind PM app to view all requests, tasks, etc.</p>
+    <h4>登录以访问 <span class="text-info">HiveMind PM</span> 莫基项目</h4>
+    <p>需要一个帐户来查看问题（请求）、项目和任务。创建一个 <a class="text-success" href="#new-account" data-toggle="tab">新帐户</a> 以立即获得访问权限。</p>
+    <p>您的帐户最初将完全访问我的帐户应用程序以获取请求、消息等，并仅查看HiveMind PM应用程序以查看所有请求、任务等。</p>
 </div>
 <div class="tab-content">
     <div id="login" class="tab-pane active">
         <form method="post" action="${sri.buildUrl("login").url}" class="form-signin" id="login_form">
-            <p class="text-muted text-center">Enter your username and password to sign in</p>
+            <p class="text-muted text-center">输入您的用户名和密码登录</p>
             <#-- not needed for this request: <input type="hidden" name="moquiSessionToken" value="${ec.web.sessionToken}"> -->
-            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="Username" required="required" class="form-control top" id="login_form_username">
-            <input type="password" name="password" placeholder="Password" required="required" class="form-control bottom">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="用户名" required="required" class="form-control top" id="login_form_username">
+            <input type="password" name="password" placeholder="密码" required="required" class="form-control bottom">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
         </form>
         <script>$("#login_form_username").focus();</script>
     </div>
     <div id="reset" class="tab-pane">
         <form method="post" action="${sri.buildUrl("resetPassword").url}" class="form-signin" id="reset_form">
-            <p class="text-muted text-center">Enter your username to reset and email your password</p>
+            <p class="text-muted text-center">输入您的用户名和密码登录</p>
             <input type="hidden" name="moquiSessionToken" value="${ec.web.sessionToken}">
-            <input type="text" name="username" placeholder="Username" required="required" class="form-control">
-            <button class="btn btn-lg btn-danger btn-block" type="submit">Reset &amp; Email Password</button>
+            <input type="text" name="username" placeholder="用户名" required="required" class="form-control">
+            <button class="btn btn-lg btn-danger btn-block" type="submit">重置并电邮密码</button>
         </form>
     </div>
     <div id="change" class="tab-pane">
         <form method="post" action="${sri.buildUrl("changePassword").url}" class="form-signin" id="change_form">
-            <p class="text-muted text-center">Enter details to change your password</p>
+            <p class="text-muted text-center">输入详细信息以更改密码</p>
             <input type="hidden" name="moquiSessionToken" value="${ec.web.sessionToken}">
-            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="Username" required="required" class="form-control top">
-            <input type="password" name="oldPassword" placeholder="Old Password" required="required" class="form-control middle">
-            <input type="password" name="newPassword" placeholder="New Password" required="required" class="form-control middle">
-            <input type="password" name="newPasswordVerify" placeholder="New Password Verify" required="required" class="form-control bottom">
-            <button class="btn btn-lg btn-danger btn-block" type="submit">Change Password</button>
+            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="用户名" required="required" class="form-control top">
+            <input type="password" name="oldPassword" placeholder="旧密码" required="required" class="form-control middle">
+            <input type="password" name="newPassword" placeholder="新密码" required="required" class="form-control middle">
+            <input type="password" name="newPasswordVerify" placeholder="新密码验证" required="required" class="form-control bottom">
+            <button class="btn btn-lg btn-danger btn-block" type="submit">更改密码</button>
         </form>
     </div>
     <div id="new-account" class="tab-pane">
         <form name="createAccount" id="createAccount" method="post" class="form-signin" action="${sri.buildUrl("createAccount").url}">
-            <p class="text-muted text-center">Enter details to create a new account</p>
+            <p class="text-muted text-center">输入详细信息以创建新帐户</p>
             <input type="hidden" name="moquiFormName" value="createAccount">
-            <input type="text" name="firstName" value="${(ec.getWeb().getErrorParameters().get("firstName"))!""}" placeholder="First Name" class="form-control top required" required="required">
-            <input type="text" name="lastName" value="${(ec.getWeb().getErrorParameters().get("lastName"))!""}" placeholder="Last Name" class="form-control middle required" required="required">
+            <input type="text" name="lastName" value="${(ec.getWeb().getErrorParameters().get("lastName"))!""}" placeholder="姓" class="form-control middle required" required="required">
+            <input type="text" name="firstName" value="${(ec.getWeb().getErrorParameters().get("firstName"))!""}" placeholder="名" class="form-control top required" required="required">
             <input type="email" name="emailAddress" value="${(ec.getWeb().getErrorParameters().get("emailAddress"))!""}" placeholder="Email" class="form-control middle email required" required="required">
-            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="Username (please use GitHub ID)" class="form-control middle">
-            <input type="password" class="form-control middle required" name="newPassword" placeholder="Password" required="required">
-            <input type="password" class="form-control bottom required" name="newPasswordVerify" placeholder="Verify Password" required="required">
-            <button class="btn btn-lg btn-success btn-block" type="submit">Create Account</button>
+            <input type="text" name="username" value="${(ec.getWeb().getErrorParameters().get("username"))!""}" placeholder="用户名 (请使用 GitHub ID)" class="form-control middle">
+            <input type="password" class="form-control middle required" name="newPassword" placeholder="密码" required="required">
+            <input type="password" class="form-control bottom required" name="newPasswordVerify" placeholder="验证密码" required="required">
+            <button class="btn btn-lg btn-success btn-block" type="submit">创建新帐户</button>
         </form>
     </div>
 </div>
 <div class="text-center">
     <ul class="list-inline">
-        <li><a class="text-muted" href="#login" data-toggle="tab">Login</a></li>
-        <li><a class="text-muted" href="#reset" data-toggle="tab">Reset Password</a></li>
-        <li><a class="text-muted" href="#change" data-toggle="tab">Change Password</a></li>
-        <li><a class="text-muted" href="#new-account" data-toggle="tab">New Account</a></li>
+        <li><a class="text-muted" href="#login" data-toggle="tab">登录</a></li>
+        <li><a class="text-muted" href="#reset" data-toggle="tab">重置密码</a></li>
+        <li><a class="text-muted" href="#change" data-toggle="tab">更改密码</a></li>
+        <li><a class="text-muted" href="#new-account" data-toggle="tab">新帐户</a></li>
     </ul>
 </div>

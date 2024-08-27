@@ -55,36 +55,36 @@
                         <ul id="navigation">
                             <li<#if menu_active! == "framework" || menu_active! == "mantle" || menu_active! == "applications" || menu_active! == "addons"> class="active-item"</#if>>
                                 <span class="sub-nav-toggle plus"></span>
-                                <a href="/index.html">Ecosystem</a>
+                                <a href="/index.html">生态系统</a>
                                 <ul>
-                                    <li<#if menu_active! == "framework"> class="active-item"</#if>><a href="/framework.html">Framework</a></li>
-                                    <li<#if menu_active! == "mantle"> class="active-item"</#if>><a href="/mantle.html">Business Artifacts</a></li>
-                                    <li<#if menu_active! == "applications"> class="active-item"</#if>><a href="/applications.html">Applications</a></li>
-                                    <li<#if menu_active! == "addons"> class="active-item"</#if>><a href="/addons.html">Add ons</a></li>
+                                    <li<#if menu_active! == "framework"> class="active-item"</#if>><a href="/framework.html">框架</a></li>
+                                    <li<#if menu_active! == "mantle"> class="active-item"</#if>><a href="/mantle.html">业务工件</a></li>
+                                    <li<#if menu_active! == "applications"> class="active-item"</#if>><a href="/applications.html">应用程序</a></li>
+                                    <li<#if menu_active! == "addons"> class="active-item"</#if>><a href="/addons.html">附加组件</a></li>
                                 </ul>
                             </li>
-                            <li<#if menu_active! == "service"> class="active-item"</#if>><a href="/service.html">Service Providers</a></li>
+                            <li<#if menu_active! == "service"> class="active-item"</#if>><a href="/service.html">服务供应商</a></li>
                             <li>
                                 <span class="sub-nav-toggle plus"></span>
-                                <a href="/qapps/my/User/Request">Issues &amp; Tasks</a>
+                                <a href="/qapps/my/User/Request">问题与任务</a>
                                 <ul>
-                                    <li><a href="/qapps/my">My Account</a></li>
-                                    <li><a href="/qapps/my/User/Request">My Requests (Issues)</a></li>
-                                    <li><a href="/qapps/hm">HiveMind PM</a></li>
+                                    <li><a href="/qapps/my">我的账号</a></li>
+                                    <li><a href="/qapps/my/User/Request">我的请求(问题单)</a></li>
+                                    <li><a href="/qapps/hm">蜂巢思维项目管理</a></li>
                                 </ul>
                             </li>
                             <li<#if menu_active! == "docs"> class="active-item"</#if>>
                                 <span class="sub-nav-toggle plus"></span>
-                                <a href="/docs">Documentation</a>
+                                <a href="/docs">文档</a>
                                 <ul>
-                                    <li><a href="/docs/moqui">Moqui Ecosystem</a></li>
-                                    <li><a href="/docs/framework">Moqui Framework</a></li>
-                                    <li><a href="/docs/mantle">Mantle Business Artifacts</a></li>
-                                    <li><a href="/docs/apps">Applications</a></li>
-                                    <li><a href="/javadoc/index.html" target="_blank">API JavaDoc</a></li>
+                                    <li><a href="/docs/moqui">莫基生态系统</a></li>
+                                    <li><a href="/docs/framework">莫基框架</a></li>
+                                    <li><a href="/docs/mantle">地幔业务工件</a></li>
+                                    <li><a href="/docs/apps">应用程序</a></li>
+                                    <li><a href="/javadoc/index.html" target="_blank">接口文档</a></li>
                                 </ul>
                             </li>
-                            <li<#if menu_active! == "search"> class="active-item"</#if>><a href="/search">Search</a></li>
+                            <li<#if menu_active! == "search"> class="active-item"</#if>><a href="/search">搜索</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -93,11 +93,11 @@
             <div class="top-info">
                 <div class="container">
                     <p class="top-info__text pull-left hidden-xs small">
-                        <a href="https://demo.moqui.org/qapps" target="_blank">Try the applications demo!</a>
-                        <a href="https://demo.moqui.org/store" target="_blank">Try POP Shop eCommerce!</a>
+                        <a href="https://demo.moqui.org/qapps" target="_blank">体验应用程序示例！</a>
+                        <a href="https://demo.moqui.org/store" target="_blank">体验电商示例！</a>
                     </p>
                     <p class="top-info__text pull-right small">
-                        Comments? Questions? Get Involved? <a href="/docs/moqui/Community+Guide" target="_blank">Community Guide</a>
+                        评论? 问题? 加入? <a href="/docs/moqui/Community+Guide" target="_blank">社区指南</a>
                     </p>
                 </div>
             </div>
